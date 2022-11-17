@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Settings
+	</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.12.1-web/css/all.css">
+  <script type="text/javascript" src="script.js">
+</script>
+</head>
+<body>
+  
+  <div class="sidenav">
+    <center>
+        <img src="images\flames.svg">
+    </center>
+    <br>
+    <a href="profile.html"><i class="fas fa-user"></i>&nbsp;Profile</a>
+    <a href="pages.html"><i class="fas fa-object-group"></i>&nbsp;Pages</a>
+    <a href="settings.html" class="active"><i class="fas fa-cog"></i>&nbsp;Settings</a>
+    <a href="login.html"><i class="fas fa-sign-out-alt"></i>&nbsp;Sign Out</a>
+  </div>
+
+<div class="topnav">
+    <div class="searchbar">
+      <form>
+        <input type="text" name="" placeholder="Search...">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+    <a href="home.html"><i class="fas fa-home"></i>&nbsp;Home</a>
+    <a href="messages.html">  <i class="fas fa-envelope"></i>&nbsp;Messages</a>
+    <a href="notifs.html"><i class="fas fa-bell"></i>&nbsp;Notifications</a>
+    <label class="switch">
+      <input type="checkbox" onclick="toggleDarkMode()">
+      <span class="slider round"></span>
+    </label>
+    <div class="darkmodetext">
+      <i class="fas fa-moon"></i> Dark Mode
+    </div>
+  </div>
+
+<div class="main">
+   
+     <div class="eventcontainer">
+      <div class="eventheader">
+        <i class="fas fa-calendar-day"></i>&nbsp;Events
+      </div>
+      <b>
+        February 1, 2020
+      </b>
+      <br><br>
+      No events for today
+      <br>
+      <a href="calendar.html">View Calendar <i class="fas fa-chevron-right"></i></a>
+    </div> 
+    <div class="portal">
+      For grades, assessments, and payments, visit the<br>
+      <a href="https://upangsms.phinma.edu.ph/upang/students/" class="links">Student Portal <i class="fas fa-chevron-right" style="cursor: pointer;"></i></a>
+      <br>
+    </div> 
+   
+  <div class="box" style="margin-top: 6%">
+    <div class="top">
+      <i class="fas fa-user-circle"></i> Account
+    </div>
+    <div class="option">
+      <div class="clearfix">
+        <button>Change</button>
+        <div style="margin-top: 10px">
+          Email
+          <span style="margin-left: 150px">placeholder123@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="option">
+      <div class="clearfix">
+        <button>Change</button>
+        <div style="margin-top: 10px">
+          Password
+          <span style="margin-left: 120px">**********</span>
+        </div>
+      </div>
+    </div>
+    <div class="option">
+      <div class="clearfix">
+        <button>Change</button>
+        <div style="margin-top: 10px">
+          Phone
+          <span style="margin-left: 145px">09271231234</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="top">
+    <i class="fas fa-user-slash"></i> Blocked Accounts
+    </div>
+    <div class="account">
+      <div class="clearfix">
+        <a href="blocked.html">
+          <img src="images\profile.png" class="profile">
+          <button>Unblock</button>
+          <div class="name">
+            Joan Ferrer
+          </div>
+        </a>
+    
+    <a href="blocked.html">
+      <img src="images\profile.png" class="profile">
+      <button>Unblock</button>
+      <div class="name">
+        Aran Salazar
+      </div>
+    </a>    
+  </div>
+</div>
+  </div>
+
+
+</div>
+</body>
+</html>

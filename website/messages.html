@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Messages
+	</title>
+  <style type="text/css">
+
+    </style>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.12.1-web/css/all.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div class="sidenav">
+    <center>
+        <img src="images\flames.svg">
+    </center>
+    <br>
+    <a href="profile.html"><i class="fas fa-user"></i>&nbsp;Profile</a>
+    <a href="pages.html"><i class="fas fa-object-group"></i>&nbsp;Pages</a>
+    <a href="settings.html"><i class="fas fa-cog"></i>&nbsp;Settings</a>
+    <a href="login.html"><i class="fas fa-sign-out-alt"></i>&nbsp;Sign Out</a>
+  </div>
+  
+  <div class="topnav">
+    <div class="searchbar">
+      <form>
+        <input type="text" name="" placeholder="Search...">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+    <a href="home.html"><i class="fas fa-home"></i>&nbsp;Home</a>
+    <a href="messages.html" class="active">  <i class="fas fa-envelope"></i>&nbsp;Messages</a>
+    <a href="notifs.html"><i class="fas fa-bell"></i>&nbsp;Notifications</a>
+    <label class="switch">
+      <input type="checkbox" onclick="toggleDarkMode()">
+      <span class="slider round"></span>
+    </label>
+    <div class="darkmodetext">
+      <i class="fas fa-moon"></i> Dark Mode
+    </div>
+  </div>
+    
+<div style="margin-left: 320px">
+  
+     <div class="eventcontainer">
+      <div class="eventheader">
+        <i class="fas fa-calendar-day"></i>&nbsp;Events
+      </div>
+      <b>
+        February 1, 2020
+      </b>
+      <br><br>
+      No events for today
+      <br>
+      <a href="calendar.html">View Calendar <i class="fas fa-chevron-right"></i></a>
+    </div> 
+    <div class="portal">
+      For grades, assessments, and payments, visit the<br>
+      <a href="https://upangsms.phinma.edu.ph/upang/students/" class="links">Student Portal <i class="fas fa-chevron-right" style="cursor: pointer;"></i></a>
+      <br>
+    </div>
+
+  <div style="display: block; background-color: transparent; width: 75%; margin-top: 6%;">
+    <div class="contacts">
+      <div class="search">
+        <form>
+          <input type="text" name="" style="width: 85%;height: 32px;border-radius: 10px;border-style: none;text-indent: 20px;font-size: 16px" placeholder="Search">
+          <button style="background-color: #939642;border-style: none;float: right;width: 15%;height: 34px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;color: #dedede;cursor: pointer;"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    <div style="display: block;">
+      <div class="clearfix">
+        <div style="border-top: solid 1px gray;" class="messages">
+          <img src="images\profile.png" class="profile">
+          <h3><a href="view.html">Claude Reyes</a></h3>
+          You: Btw, can i ask you some...
+        </div>
+        <div class="messages">
+          <img src="images\profile.png" class="profile">
+          <h3><a href="view.html">Almira Pandela</a></h3>
+          I'll review for a bit
+        </div>
+        <div class="messages">
+          <img src="images\profile.png" class="profile">
+          <h3><a href="view.html">Elena Cruz</a></h3>
+          I still have to code something...
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <div class="messagecontainer">
+    <div style="display: inline-block;background-color:#2d511a;width: 100% ">
+      <a href="view.html">
+        <img src="images\profile.png" style="float: left;margin:10px 10px;width: 50px;height: auto; ">
+      </a>
+      <div class="dropdown" style="float: right;margin: 10px;">
+        <button onclick="myFunction()" class="dropbtn" style="background-color: transparent;"><i class="fas fa-ellipsis-v"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="view.html"><i class="fas fa-user-circle"></i> View Profile</a>
+          <a href="#"><i class="fas fa-volume-mute"></i> Mute</a>
+          <a href="#"><i class="fas fa-ban"></i> Block</a>
+        </div>
+      </div>
+      <h2 style="margin-top: 4%;"><a href="view.html" class="nameheader">Claude Reyes</a></h2>
+    </div>
+    <div class="scroll">
+      <div class="containerchat">
+        <img src="images\profile.png" alt="Avatar">
+        <p>Can you come over by my place tomorrow?</p>
+        <span class="time-right">11:00 PM</span>
+      </div>
+      
+      <div class="containerchat darker">
+        <img src="images\profile.png"" alt="Avatar" class="right">
+        <p>Sure, what time then?</p>
+        <span class="time-left">11:01 PM</span>
+      </div>
+      
+      <div class="containerchat">
+        <img src="images\profile.png" alt="Avatar">
+        <p>Probably noon, I'll just chat up with you if something happens</p>
+        <span class="time-right">11:04 PM</span>
+      </div>
+
+       <div class="containerchat darker" style="margin-bottom: 5%">
+        <img src="images\profile.png"" alt="Avatar" class="right">
+        <p>Hey, can i ask you something?</p>
+        <span class="time-left">12:00 PM</span>
+      </div>
+
+    </div>
+    <div style="display:block;width: auto;background-color: #2d511a;padding: 14px 0px 10px 0px">
+      
+        <button class="chatbtn" style="margin-left: 15px"><i class="fas fa-photo-video" style="color: #dedede;"></i></button>
+        <button class="chatbtn"><i class="fas fa-paperclip" style="color: #dedede;"></i></i></button>
+        <textarea style="resize: none; width: 75%; height:50px; font-family: Helvetica; font-size: 16px; border-style: none;box-sizing: border-box;padding: 5px;border-radius: 10px" placeholder="Start typing..."></textarea>
+      
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+
+</body>
+</html>

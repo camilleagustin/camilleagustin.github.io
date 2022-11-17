@@ -1,0 +1,916 @@
+body {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+  background-color: #ebebeb;
+}
+
+p {
+  text-align: justify;
+  padding: 20px;
+}
+
+h3 {
+  margin:1% 10%;
+}
+
+.dark-mode {
+  background-color: black;
+  color: #f1f1f1;
+}
+.dark-mode .container, 
+.dark-mode .topnav .searchbar,
+.dark-mode .eventcontainer,
+.dark-mode .contacts {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .comment,
+.dark-mode .container textarea{
+  background-color: transparent;
+  color: #f1f1f1;
+}
+.dark-mode .topnav input[type=text] {
+  color: white;
+}
+
+.dark-mode .panel a {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+.dark-mode .panel a:hover {
+  background-color: #3d3d3d;
+} 
+.dark-mode .react {
+  color: #f1f1f1;
+}
+
+.dark-mode .react:hover{
+  color: black;
+}
+.dark-mode .eventcontainer a{
+  color: #939642
+}
+.dark-mode .portal a{
+  color: #f1f1f1;
+}
+
+.dark-mode .account a,
+.dark-mode .option{
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode .contacts input[type=text],
+.dark-mode .contacts .search{
+  background-color: #3d3d3d;
+  color: white;
+}
+.dark-mode .weekdays {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+.dark-mode .days {
+  background-color: #3d3d3d;
+}
+.dark-mode .days li {
+  color: #f1f1f1;
+}
+
+.dark-mode .messages {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .messages a {
+  color:#f1f1f1;
+}
+
+.dark-mode .messages:hover {
+  background-color: #3d3d3d;
+}
+.dark-mode .scroll {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .containerchat{
+  background-color: #3f3f3f;
+}
+.dark-mode .darker{
+  background-color: #545454;
+}
+.dark-mode .messagecontainer textarea{
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+.dark-mode .dropdown-content {
+  background-color: black;
+}
+
+/* Links inside the dropdown */
+.dark-mode .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dark-mode .dropdown-content a:hover {background-color: #3d3d3d}
+.dark-mode .modal-content, .dark-mode .modal-content input[type=text]{
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.button {
+  background-color: #939642;
+  border: none;
+  color: #f1f1f1;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.button:hover {
+  transition: 0.5s;
+  background-color: #a8aa5a;
+  color: white;
+} 
+
+.profile {
+  width: 8%;
+  height: auto;
+  float: left;
+  border-radius: 100%;
+}
+
+
+.comment {
+  height: 25px; 
+  width: 97%; 
+  border-radius: 10px;
+  padding: 10px;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  resize: none;
+  font-family: arial;
+}
+
+
+.header {
+  padding: 20px;
+  background: #2d511a;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+ .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2d511a;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  height: 80px;
+}
+
+.topnav {
+  margin-left: 270px;
+  overflow: hidden;
+  background-color: #2d511a;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+
+.topnav a {
+  float: left;
+  font-size: 20px;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.topnav a.active {
+  background-color: #939642;
+  color: #f1f1f1;
+}
+
+
+.topnav input[type=text] {
+  float: left;
+  border: none;
+  font-size: 18px;
+  height: 20px;
+  border-right: none;
+  background-color: transparent;
+  height: 28px;
+  width: 92%;
+  text-indent: 10px;
+}
+
+.topnav .searchbar {
+  background-color: white; 
+  display: inline-block;
+  margin-top: 10px; 
+  margin-left: 280px;
+  border-radius: 10px;
+  height: 30px; 
+  float: left;
+  margin-right: 20px;
+  width: 30%;
+}
+.topnav .searchbar button {
+  padding: 6px 10px;
+  background: #939642;
+  color: #f1f1f1;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display:inline-block;
+  float: right;
+  height: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.topnav a:hover{
+  background-color: #a8aa5a;
+  transition: .3s;
+}
+.sidenav {
+  height: 100%;
+  width: 280px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #2d511a;
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 10px 10px 10px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  margin-left: 15%;
+  width: 100%;
+}
+
+.sidenav a.active {
+  background-color:  #939642;
+}
+
+.sidenav a:hover {
+  background-color: #a8aa5a;
+  transition: 0.3s;
+}
+.sidenav .info {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color: #f1f1f1;
+
+}
+
+.main {
+  margin-left: 350px; 
+}
+
+.portal{
+   right: 55px; 
+   position: fixed;
+   margin-top:310px;
+   font-size: 12px;
+}
+.portal a {
+  text-decoration: none;
+  color: black;
+}
+.portal a:hover{
+  text-decoration: underline;
+}
+.container {
+  width: 65%;
+  background-color: white;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+.eventcontainer {
+  right: 20px;
+  position: fixed;
+  width: 20%; 
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+
+}
+
+.eventcontainer a {
+  color: #2d511a; 
+  font-weight: bold;
+  bottom:0;
+  position: absolute;
+  padding-bottom: 10px;
+  text-decoration-line: none;
+  font-size: 14px;
+  margin-left: -55px;
+
+}
+
+.eventcontainer .eventheader {
+  width:auto;
+  background-color: #2d511a; 
+  padding: 10px;
+  font-size: 18px;
+  color: #f1f1f1;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+
+.panel {
+  display: block;
+  border-radius: 10px;
+  background-color: #2d511a;
+  width: 65%;
+  color: white;
+
+}
+.panel a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  display: block;
+  padding: 10px 20px 10px 20px;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: gray;
+  width: auto;
+  }
+  .panel a:hover {
+  transition: 0.3s;
+  background-color: #cccccc;
+  }
+  .panel img {
+  margin-right: 2%;
+  }
+  .react{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px 15px;
+  }
+  .react:hover {
+  background-color:  #cccccc;
+  transition: .3s;
+  }
+
+.darkmodetext{
+  color: #f1f1f1;
+  font-size: 20px; 
+  margin:15px 10px 0px;
+  float: right;
+  padding-right: 70px
+}
+
+/* The switch - the box around the slider */
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  right: 0;
+  position: fixed;
+  margin:10px 10px 0px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #939642;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #939642;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.dropbtn {
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #939642;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #a8aa5a;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*Messages*/
+.messagecontainer {
+  width: 550px;
+  border-color: #2d511a;
+  border-bottom: none;
+  display: inline-block;
+  float: left;
+}
+
+.messagecontainer .nameheader{
+  color: white;
+  text-decoration: none;
+}
+
+.messagecontainer .nameheader:hover{
+  text-decoration: underline;
+}
+
+.messagecontainer p{
+  padding: 10px;
+}
+
+/* Chat containers */
+.containerchat {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  width: 85%;
+  margin: auto;
+  margin-top: 5%;
+  border-style: none;
+}
+
+/* Darker chat container */
+.darker {
+  background-color: #cccccc;
+}
+
+/* Clear floats */
+.containerchat::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.containerchat img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.containerchat img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+  .scroll{
+    overflow-y: auto; 
+    height: 512px;
+    background-color: #dedede;
+    }
+
+  .scroll::-webkit-scrollbar {
+    width: 15px;
+    }
+
+
+  .scroll::-webkit-scrollbar-track {
+    background-color: #bcbcbc;
+    }
+ 
+
+  .scroll::-webkit-scrollbar-thumb {
+    background: #a8aa5a; 
+    }
+
+  .scroll::-webkit-scrollbar-thumb:hover {
+    background: #9c9e52; 
+    }
+  .scroll::-webkit-scrollbar-thumb:active {
+    background: #888947;
+    }
+
+.contacts {
+  width: 300px;
+  height: 660px;
+  float: left;
+  background-color: #cccccc;
+  display: inline-block;
+}
+.messages{
+  text-decoration: none;
+  background-color: #cccccc;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: gray;
+}
+  .messages:hover {
+  transition: 0.3s;
+  background-color: #f1f1f1;
+  }
+  .messages a{
+    text-decoration: none;
+    color: black;
+  }
+  .messages a:hover{
+    text-decoration: underline;
+  }
+  .messages h3 {
+    margin: 5px;
+    padding-bottom: 5px;
+  }
+  .contacts img {
+  margin-right: 2%;
+  width: 20%;
+  }
+  .contacts .search {
+    background-color: white;
+    border-radius: 10px;
+    margin: 6% 5% 6% 5%;
+    width: 270px;
+  }
+  .chatbtn{
+    font-size: 25px;
+    background-color:transparent;
+    border-style: none;
+    cursor: pointer;
+    float: left;
+    color: #dedede;    
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    }
+  .chatbtn:hover{
+    background-color: #a8aa5a;
+    transition: .3s;
+    }
+
+/*Settings*/
+.box {
+  width: 65%;
+  background-color: white;
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  }
+.box .top {
+  display: block;
+  background-color: #2d511a;
+  width: auto;padding: 8px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  }
+.account {
+  display: block;
+  }
+.account a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: gray;
+  width: auto;
+  font-size: 16px;
+  padding: 8px 10px 8px 10px;
+  }
+.account a:hover{
+  background-color: #cccccc;
+  transition: .3s;
+  }
+.account img {
+  margin-right: 2%;
+  margin-left: 1%;
+  }
+
+.account .name{
+  margin-top: 20px;
+  }
+.account button {
+  float: right;
+  border-style: none;
+  background-color: #939642;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 100px;
+  margin: 10px 20px;
+  }
+.account button:hover{
+  background-color: #a8aa5a;
+  }
+.option {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  display: block;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: gray;
+  width: auto;
+  font-size: 16px;
+  padding: 8px 10px 8px 10px;
+  text-indent: 2%;
+    }
+.option button {
+  float: right;
+  border-style: none;
+  background-color: #939642;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 100px;
+  margin: 0px 20px;
+    }
+.option button:hover{
+  background-color: #a8aa5a;
+  }
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+/*Profile*/
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  width: 40%; 
+  border-radius: 10px;
+}
+.modal-content input[type=text]{
+  border: solid 1px gray;
+  width: 45%;
+  height: 30px;
+  text-indent: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-top: 10px;
+}
+.modal-content textarea{
+  border: none;
+  width: 90%;
+  height: 50px;
+  border: solid 1px gray;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.modal-header {
+  background-color: #2d511a;
+  display: block;
+  color: #f1f1f1;
+  font-size: 18px;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: bold;
+
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Calendar*/
+ul {list-style-type: none;}
+.table {
+  width: 65%;
+  margin-top: 6%;
+  margin-bottom: 2%;
+}
+/* Month header */
+.month {
+  padding: 60px 25px;
+  background: #2d511a;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #f9f9f9;
+  margin: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:18px;
+  color: black;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #a8aa5a;
+  color: white !important;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Claude Reyes
+  </title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.12.1-web/css/all.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  
+  <div class="sidenav">
+    <center>
+        <img src="images\flames.svg">
+    </center>
+    <br>
+    <a href="profile.html"><i class="fas fa-user"></i>&nbsp;Profile</a>
+    <a href="pages.html"><i class="fas fa-object-group"></i>&nbsp;Pages</a>
+    <a href="settings.html"><i class="fas fa-cog"></i>&nbsp;Settings</a>
+    <a href="login.html"><i class="fas fa-sign-out-alt"></i>&nbsp;Sign Out</a>
+  </div>
+
+  <div class="topnav">
+    <div class="searchbar">
+      <form>
+        <input type="text" name="" placeholder="Search...">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+    <a href="home.html"><i class="fas fa-home"></i>&nbsp;Home</a>
+    <a href="messages.html">  <i class="fas fa-envelope"></i>&nbsp;Messages</a>
+    <a href="notifs.html"><i class="fas fa-bell"></i>&nbsp;Notifications</a>
+    <label class="switch">
+      <input type="checkbox" onclick="toggleDarkMode()">
+      <span class="slider round"></span>
+    </label>
+    <div class="darkmodetext">
+      <i class="fas fa-moon"></i> Dark Mode
+    </div>
+  </div>
+
+  <div class="main">  
+     
+     <div class="eventcontainer">
+      <div class="eventheader">
+        <i class="fas fa-calendar-day"></i>&nbsp;Events
+      </div>
+      <b>
+        February 1, 2020
+      </b>
+      <br><br>
+      No events for today
+      <br>
+      <a href="calendar.html">View Calendar <i class="fas fa-chevron-right"></i></a>
+    </div> 
+    <div class="portal">
+      For grades, assessments, and payments, visit the<br>
+      <a href="https://upangsms.phinma.edu.ph/upang/students/" class="links">Student Portal <i class="fas fa-chevron-right" style="cursor: pointer;"></i></a>
+      <br>
+    </div> 
+
+  <div class="container" style="margin-top: 6%;">
+    <div class="dropdown" style="float: right;">
+        <button onclick="drpdwn()" class="dropbtn"><i class="fas fa-ellipsis-h"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#"><i class="fas fa-ban"></i> Block</a>
+          <a href="#"><i class="fas fa-flag"></i> Report</a>
+        </div>
+      </div>
+      <button class="button" style="float: right;margin-right: 10px" onclick="window.location.href='messages.html';">
+          <i class="fas fa-envelope"></i> Message
+        </button>
+      <img src="images\profile.png" style="width: 15%; float: left;">  
+      <div style="margin-left: 20%; padding-bottom: 0">
+       
+       <h2 style="margin-top: 10px">Claude Reyes</h2>
+
+       <h3 style="margin-left: 0; margin-top: 0%";>CITE - BSIT</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id
+        
+      </div>
+
+  </div>
+
+
+  <h3 style="margin-left: 0">Posts</h3>
+    
+    <div class="container" style="padding: 0px;">
+      <div class="clearfix">
+        <div style="padding:15px 20px">
+          <img src="images\profile.png" class="profile">
+          <h3>Claude Reyes</h3>
+          <a class="time-left" style="margin-left: 2%">3 mins</a>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+        </p>
+        <div style="display: inline-block;width:100%; background-color: transparent;margin-top: -3%;">
+          <div style="padding: 10px 20px;">
+            <hr style="margin-top: 0px">
+            <button class="react" style="font-size: 16px;float: left;"><i class="far fa-thumbs-up"></i>&nbsp;Like</button>
+            <div style="text-align: center; ">
+              <button class="react" style="font-size: 16px;"><i class="far fa-comments"></i>&nbsp;Comments</button>
+              <span style="float: right;">
+                <button class="react" style="font-size: 16px"><i class="fas fa-share"></i>&nbsp;Share</button>
+              </span>
+              <hr>
+            </div>
+            <br>
+            <textarea class="comment" placeholder="Add a comment..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  <script type="text/javascript">
+      function drpdwn() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+
+</body>
+</html>
